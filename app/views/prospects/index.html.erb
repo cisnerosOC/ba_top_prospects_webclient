@@ -1,0 +1,4 @@
+<h1>Prospects</h1>
+<% @prospects.each do |prospect| %>
+<h3> <%= prospect ["first_name"] %> <%= prospect ["last_name"] %> <%= prospect["team"] %> <%= prospect["position"] %> </h3>
+<%end %>
