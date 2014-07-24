@@ -1,0 +1,26 @@
+<h1>Add Prospect</h1>
+<div class="small">
+<div class="form">
+  <%= form_tag(prospect_path(@prospect["id"]), :method => :patch) do %>
+    <fieldset>
+      <%= label_tag :first_name %>
+      <%= text_field_tag :first_name, @prospect["first_name"] %><br/>
+
+      <%= label_tag :last_name %>
+      <%= text_field_tag :last_name, @prospect["last_name"] %><br/>
+
+      <%= label_tag :team %>
+      <%= text_field_tag :team, @prospect["team"] %><br/>
+
+      <%= label_tag :position %>
+      <%= text_field_tag :position, @prospect["position"] %><br/>
+
+      <%= label_tag :rank %>
+      <%= text_field_tag :rank, @prospect["rank"] %><br/>
+
+      <%= submit_tag "Update Prospect" %>
+    </fieldset>
+  <% end %>
+</div>
+</div>
+<p></p>

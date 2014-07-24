@@ -1,2 +1,5 @@
 <h1><%= @prospect["first_name"] %> <%= @prospect["last_name"] %></h1>
 <h2><%= @prospect["team"] %> <%= @prospect["position"] %></h2>
+
+<%= link_to "Edit", edit_prospect_path(@prospect["id"]) %>
+<%= link_to "Delete", prospect_path(@prospect["id"]), :method => :delete %>

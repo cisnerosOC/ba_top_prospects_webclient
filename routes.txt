@@ -1,0 +1,9 @@
+       Prefix Verb   URI Pattern                   Controller#Action
+    prospects GET    /prospects(.:format)          prospects#index
+              POST   /prospects(.:format)          prospects#create
+ new_prospect GET    /prospects/new(.:format)      prospects#new
+edit_prospect GET    /prospects/:id/edit(.:format) prospects#edit
+     prospect GET    /prospects/:id(.:format)      prospects#show
+              PATCH  /prospects/:id(.:format)      prospects#update
+              PUT    /prospects/:id(.:format)      prospects#update
+              DELETE /prospects/:id(.:format)      prospects#destroy
